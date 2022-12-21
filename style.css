@@ -40,12 +40,12 @@ main{
     justify-content: center;
     align-items: center;
     gap: 30px;
+    position: relative;
 }
 
 .days,.hours, .minutes, .seconds{
     border: 1px solid black;
     padding: 10px;
-    position: relative;
     font-size: 2rem;
     font-weight: bold;
     color: var(--Soft-red);
@@ -67,14 +67,14 @@ main{
     left: 0;
 }
 .m{
-    left: 0;
+    left: 10;
 }
 .s{
-    left: 0;
+    left: 20;
 }
 
 .h{
-    left: 0;
+    left: 30;
 }
 
 .social{
