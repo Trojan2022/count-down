@@ -1,0 +1,102 @@
+:root{
+--Grayish-blue: hsl(237, 18%, 59%);
+--Soft-red: hsl(345, 95%, 68%);
+--White: hsl(0, 0%, 100%);
+--Dark-desaturated-blue: hsl(236, 21%, 26%);
+--Very-dark-blue: hsl(235, 16%, 14%);
+--Very-dark-sky-blue: hsl(234, 17%, 12%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(images/bg-stars.svg);
+    background-color: var(--Very-dark-sky-blue);
+    font-size: 16px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    padding-bottom: 100px;
+    background:url(images/pattern-hills.svg) no-repeat bottom;
+}
+.text{
+    padding-bottom: 100px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--White);
+}
+
+.timer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.days,.hours, .minutes, .seconds{
+    border: 1px solid black;
+    padding: 10px;
+    position: relative;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--Soft-red);
+    border-radius: 10px;
+    background-color: var(--Dark-desaturated-blue);
+}
+
+.d,.h, .m, .s{
+    position: absolute;
+    bottom: -30px;
+    margin: 10px;
+    font-size: .5rem;
+    color: var(--White);
+    opacity: .5;
+    font-weight: normal;
+}
+
+.d{
+    left: 0;
+}
+.m{
+    left: 0;
+}
+.s{
+    left: 0;
+}
+
+.h{
+    left: 0;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: -10px;
+    align-items: center;
+}
+
+.fb,.ig,.pin{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.fb{
+    background: url(images/icon-facebook.svg) no-repeat;
+}
+.ig{
+    background: url(images/icon-instagram.svg) no-repeat;
+}
+.pin{
+    background: url(images/icon-pinterest.svg) no-repeat;
+}
