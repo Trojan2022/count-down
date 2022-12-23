@@ -51,6 +51,11 @@ main{
     color: var(--Soft-red);
     border-radius: 10px;
     background-color: var(--Dark-desaturated-blue);
+    
+}
+
+.seconds{
+    animation: flip 1s linear infinite;
 }
 
 .d,.h, .m, .s{
@@ -61,6 +66,15 @@ main{
     color: var(--White);
     opacity: .5;
     font-weight: normal;
+}
+
+@keyframes flip {
+    50%{
+        transform: scale(.5);
+    }
+    100%{
+        transform: scale(1.2);
+    }
 }
 
 .d{

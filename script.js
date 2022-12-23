@@ -3,13 +3,14 @@ const hour=document.querySelector('.hours');
 const minute=document.querySelector('.minutes');
 const second=document.querySelector('.seconds');
 
-
+let wantdateword= new Date("Jan 10, 2024 15:37:35").getTime();
 setInterval(()=>{
-let dateword= new Date();
-let d=dateword.getDate();
-let h=dateword.getHours();
-let m=dateword.getMinutes();
-let s=dateword.getSeconds();
+let dateword= new Date().getTime();
+let different=wantdateword-dateword;
+let d=Math.floor(different/(1000*60*60*24));
+let h=Math.floor(different% (1000*60*60*24) / (1000*60*60));
+let m=Math.floor(different % (1000*60*60) /(1000*60));
+let s=Math.floor(different % (1000*60) / 1000);
 if(d<10){
     d="0"+d;
 }
