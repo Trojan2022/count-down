@@ -55,7 +55,7 @@ main{
 }
 
 .seconds{
-    animation: flip 1s linear infinite;
+    animation: flip 1s ease  infinite;
 }
 
 .d,.h, .m, .s{
